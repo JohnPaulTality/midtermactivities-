@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .clear-btn {    
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration</h2>
+    <form action="register.php" method="post">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="student_id" placeholder="Student ID" required>
+      <input type="text" name="course" placeholder="Course" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <button type="submit" name="register">Register</button>
+      <button type="submit" name="clear" class="clear-btn">Clear Records</button>
+    </form>
+  </div>
+</body>
+</html>
